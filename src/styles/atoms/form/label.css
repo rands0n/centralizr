@@ -1,0 +1,5 @@
+.label {
+  color: $silver;
+  cursor: text;
+  line-height: 2rem;
+}

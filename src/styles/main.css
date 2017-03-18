@@ -4,6 +4,7 @@
 @import "utils/placeholders";
 
 @import "utils/mixins/reset-border-color-input";
+@import "utils/mixins/form-component";
 @import "utils/mixins/clearfix";
 @import "utils/mixins/get-size";
 @import "utils/mixins/column-base";
@@ -18,3 +19,9 @@
 @import "atoms/button";
 @import "atoms/rounded";
 @import "atoms/circular";
+
+@import "atoms/form/fieldset";
+@import "atoms/form/helper";
+@import "atoms/form/label";
+@import "atoms/form/input";
+@import "atoms/form/field";

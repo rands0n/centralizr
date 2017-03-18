@@ -1,0 +1,21 @@
+@define-mixin form-component $border-color, $border-color-focus {
+  background-color: #fff;
+  border: 0;
+  border-radius: .1875rem;
+  box-shadow: inset 0 0 0 .0625rem $(border-color);
+  color: $slate;
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 2.125rem;
+  margin: 0;
+  padding-left: .625rem;
+  padding-right: .625rem;
+  transition: all .3s ease-in-out;
+  vertical-align: middle;
+  width: 100%;
+
+  &:focus {
+    box-shadow: inset 0 0 0 .0625rem $(border-color-focus);
+    outline: 0;
+  }
+}
