@@ -31,6 +31,7 @@
     "del": "^2.2.2",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-copy": "^1.0.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^3.1.1",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
@@ -53,6 +54,7 @@
   "scripts": {
     "build": "npm run start build",
     "start": "gulp",
+    "deploy": "yarn start deploy",
     "stylelint": "npm run start stylelint",
     "test": "npm run stylelint",
     "release": "npm run build && git commit -am v$npm_package_version && git tag v$npm_package_version && git push && git push --tags && npm publish"

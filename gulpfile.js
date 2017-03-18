@@ -5,6 +5,7 @@ const paths = require('./src/tasks/paths')
 gulp.task('clean', require('./src/tasks/clean'))
 gulp.task('imagemin', require('./src/tasks/imagemin'))
 gulp.task('fonts', require('./src/tasks/fonts'))
+gulp.task('ghpages', require('./src/tasks/ghpages'))
 
 gulp.task('stylelint', require('./src/tasks/stylelint'))
 gulp.task('postcss', require('./src/tasks/postcss'))
@@ -29,6 +30,13 @@ gulp.task('build', gulp.series(
       'postcss'
     ),
     'imagemin'
+  )
+)
+
+gulp.task('deploy',
+  gulp.series(
+    'build',
+    'ghpages'
   )
 )
 
