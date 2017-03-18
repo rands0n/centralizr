@@ -4,6 +4,7 @@ const paths = require('./src/tasks/paths')
 
 gulp.task('clean', require('./src/tasks/clean'))
 gulp.task('imagemin', require('./src/tasks/imagemin'))
+gulp.task('fonts', require('./src/tasks/fonts'))
 
 gulp.task('stylelint', require('./src/tasks/stylelint'))
 gulp.task('postcss', require('./src/tasks/postcss'))
@@ -21,6 +22,7 @@ gulp.task('watch', () => {
 
 gulp.task('build', gulp.series(
     'clean',
+    'fonts',
     'metalsmith',
     gulp.parallel(
       'stylelint',
@@ -32,6 +34,7 @@ gulp.task('build', gulp.series(
 
 gulp.task('default', gulp.series(
     'clean',
+    'fonts',
     'metalsmith',
     gulp.parallel(
       'stylelint',

@@ -5,12 +5,14 @@
 @import "typography/transform";
 
 html {
-  font-size: $default-font-size;
+  font-size: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
   color: $black;
   font-family: $default-font-family;
+  font-size: $default-font-size;
   font-weight: 400;
+  text-rendering: optimizeLegibility;
 }

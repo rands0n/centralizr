@@ -27,6 +27,11 @@ module.exports = {
     glob: `${src}/icons/**/*.{svg}`,
     dist: `${dist}/icons/`
   },
+  fonts: {
+    src: `${src}/fonts`,
+    glob: `${src}/fonts/**/*.{woff2,woff}`,
+    dist: `${dist}/fonts/`
+  },
   docs: {
     src: `${docs}/`,
     glob: `${docs}/**/*.{md,html}`
