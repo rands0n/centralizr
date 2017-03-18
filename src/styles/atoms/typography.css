@@ -1,0 +1,16 @@
+@import "typography/aligment";
+@import "typography/heading";
+@import "typography/paragraph";
+@import "typography/style";
+@import "typography/transform";
+
+html {
+  font-size: $default-font-size;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: $black;
+  font-family: $default-font-family;
+  font-weight: 400;
+}

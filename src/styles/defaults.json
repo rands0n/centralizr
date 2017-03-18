@@ -1,1 +1,27 @@
-{}
+{
+  "black": "#1F2D3D",
+  "steel": "#273444",
+  "slate": "#3C4858",
+  "silver": "#8492A6",
+
+  "snow": "#F9FAFC",
+  "dark-snow": "#EFF2F7",
+  "extra-dark-snow": "#E5E9F2",
+
+  "smoke": "#E0E6ED",
+  "dark-smoke": "#D3DCE6",
+  "extra-dark-smoke": "#C0CCDA",
+
+  "default-font-size": "16px",
+  "default-font-family": "Helvetica, Arial, sans-serif",
+
+  "breakpoint-xs": "480px",
+  "breakpoint-sm": "768px",
+  "breakpoint-md": "960px",
+  "breakpoint-lg": "1120px",
+  "breakpoint-xl": "1280px",
+
+  "columns": "12",
+  "gutter-width": "20px",
+  "grid-limit": "980px"
+}
