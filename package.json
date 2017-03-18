@@ -50,8 +50,11 @@
     "doc": "docs"
   },
   "scripts": {
+    "build": "npm run start build",
     "start": "gulp",
-    "test": "npm run start stylelint"
+    "stylelint": "npm run start stylelint",
+    "test": "npm run stylelint",
+    "release": "npm run build && git commit -am v$npm_package_version && git tag v$npm_package_version && git push && git push --tags && npm publish"
   },
   "keywords": [
     "css",
