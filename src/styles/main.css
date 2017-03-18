@@ -11,7 +11,10 @@
 @import "utils/mixins/disable-shadow";
 @import "utils/mixins/button";
 
+@import "atoms/box-sizing";
 @import "atoms/typography";
 @import "atoms/grid";
 @import "atoms/fonts";
 @import "atoms/button";
+@import "atoms/rounded";
+@import "atoms/circular";
