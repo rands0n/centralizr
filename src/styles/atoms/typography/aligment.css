@@ -1,5 +1,0 @@
-@each $aligment in left, center, right {
-  .align-$(aligment) {
-    text-align: $(aligment);
-  }
-}

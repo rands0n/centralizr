@@ -1,5 +1,0 @@
-@each $transformation in capitalize, lowercase, uppercase {
-  .$(transformation) {
-    text-transform: $(transformation);
-  }
-}
