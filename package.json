@@ -3,7 +3,7 @@
   "version": "0.2.1",
   "description": "A Lightweight, Responsive and Modern CSS Framework",
   "main": "",
-  "style": "src/styles/main.css",
+  "style": "src/styles/centralizr.css",
   "dependencies": {
     "autoprefixer": "^6.7.7",
     "cssnano": "^3.10.0",
@@ -52,12 +52,15 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "npm run start build",
+    "build": "yarn start build",
     "start": "gulp",
     "deploy": "yarn start deploy",
-    "stylelint": "npm run start stylelint",
-    "test": "npm run stylelint",
-    "release": "npm run build && git commit -am v$npm_package_version && git tag v$npm_package_version && git push && git push --tags && npm publish"
+    "stylelint": "yarn start stylelint",
+    "test": "yarn stylelint",
+    "commit": "git commit -am v$npm_package_version",
+    "tag": "git tag v$npm_package_version",
+    "publish": "npm publish",
+    "release": "yarn build && yarn commit && yarn tag && git push && git push --tags && yarn publish"
   },
   "keywords": [
     "css",
