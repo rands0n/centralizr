@@ -19,6 +19,7 @@
 @import "atoms/button";
 @import "atoms/rounded";
 @import "atoms/circular";
+@import "atoms/colors";
 
 @import "atoms/form/fieldset";
 @import "atoms/form/helper";

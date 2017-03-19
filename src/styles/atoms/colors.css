@@ -1,0 +1,18 @@
+@each $color in black,
+  steel,
+  silver,
+  slate,
+  blue,
+  positive,
+  negative,
+  warning,
+  snow,
+  dark-snow,
+  extra-dark-snow,
+  smoke,
+  dark-smoke,
+  extra-dark-smoke {
+  .$(color) {
+    color: $$(color);
+  }
+}

@@ -13,7 +13,7 @@ module.exports = {
   },
   styles: {
     src: `${src}/styles`,
-    entry: `${src}/styles/main.css`,
+    entry: `${src}/styles/centralizr.css`,
     glob: `${src}/styles/**/*.css`,
     dist: `${dist}/styles/`
   },
@@ -34,6 +34,18 @@ module.exports = {
   },
   docs: {
     src: `${docs}/`,
-    glob: `${docs}/**/*.{md,html}`
+    glob: `${docs}/**/*.{md,html}`,
+      scripts: {
+      src: `${docs}/scripts`,
+      entry: `${docs}/scripts/entry.js`,
+      glob: `${docs}/scripts/**/*.js`,
+      dist: `${dist}/scripts/`
+    },
+    styles: {
+      src: `${docs}/styles`,
+      entry: `${docs}/styles/main.css`,
+      glob: `${docs}/styles/**/*.css`,
+      dist: `${dist}/styles/`
+    },
   }
 }
