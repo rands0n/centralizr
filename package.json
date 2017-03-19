@@ -1,6 +1,6 @@
 {
   "name": "centralizr",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A Lightweight, Responsive and Modern CSS Framework",
   "main": "",
   "style": "src/styles/centralizr.css",
