@@ -19,6 +19,8 @@ const docs = gulp.parallel('metalsmith', styles, 'imagemin')
 gulp.task('watch', () => {
   gulp.watch(paths.styles.glob, styles)
   gulp.watch(paths.docs.glob, docs)
+
+  gulp.watch(paths.docs.styles.glob, styles)
 })
 
 gulp.task('build', gulp.series(

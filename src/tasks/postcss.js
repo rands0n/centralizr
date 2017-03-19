@@ -10,7 +10,7 @@ const processors = require('./postcss-processors')
 const errorHandler = require('./postcss-error-handler')
 
 module.exports = () => {
-  return gulp.src(paths.styles.entry)
+  return gulp.src([paths.styles.entry, paths.docs.styles.entry])
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(postcss(processors)).on('error', errorHandler)
