@@ -24,5 +24,6 @@
 @import "atoms/form/fieldset";
 @import "atoms/form/helper";
 @import "atoms/form/label";
+@import "atoms/form/select";
 @import "atoms/form/input";
 @import "atoms/form/field";

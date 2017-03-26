@@ -1,3 +1,6 @@
-.input {
+.select {
   @mixin form-component $extra-dark-snow, $extra-dark-smoke;
+
+  font-size: 1.1rem;
+  height: 2.5rem;
 }
