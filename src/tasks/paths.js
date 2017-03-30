@@ -35,7 +35,7 @@ module.exports = {
   docs: {
     src: `${docs}/`,
     glob: `${docs}/**/*.{md,html}`,
-      scripts: {
+    scripts: {
       src: `${docs}/scripts`,
       entry: `${docs}/scripts/entry.js`,
       glob: `${docs}/scripts/**/*.js`,
@@ -46,6 +46,6 @@ module.exports = {
       entry: `${docs}/styles/main.css`,
       glob: `${docs}/styles/**/*.css`,
       dist: `${dist}/styles/`
-    },
+    }
   }
 }
